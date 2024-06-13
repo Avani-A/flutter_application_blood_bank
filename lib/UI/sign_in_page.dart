@@ -30,7 +30,7 @@ class _SignInPageState extends State<SignInPage> {
                   controller: _emailController,
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Color(0xFFFFFDD0).withOpacity(0.8), // Cream white color
+                    fillColor: Color(0xFFDCDBD2).withOpacity(0.8), // Cream white color
                     hintText: 'Email',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
@@ -43,7 +43,7 @@ class _SignInPageState extends State<SignInPage> {
                   controller: _passwordController,
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Color(0xFFFFFDD0).withOpacity(0.8), // Cream white color
+                    fillColor: Color(0xFFDCDBD2).withOpacity(0.8), // Cream white color
                     hintText: 'Password',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
@@ -62,14 +62,16 @@ class _SignInPageState extends State<SignInPage> {
                     // Add your sign-in logic here (e.g., API call)
                   },
                   child: Container(
-                    width: 250, // Adjust width as needed
+                    width: 100, // Adjust width as needed
                     height: 100, // Adjust height as needed
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage('assets/sign_in_button.png'), // Use your button image asset
                         fit: BoxFit.cover,
+                        alignment: Alignment(20, 20),
                       ),
                     ),
+                    alignment: Alignment(20, 20),
                   ),
                 ),
 
